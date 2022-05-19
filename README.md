@@ -6,13 +6,14 @@ I developed product detail page using javascript and scss with lightbox product 
 
 #### Desktop
 
-![screenshot desktop](design/desktop-design.jpg)
-![screenshot desktop](design/active-states-lightbox.jpg)
+<img src="design/desktop-design.jpg" alt="drawing" width="100%"/>
+<img src="design/active-states-lightbox.jpg" alt="drawing" width="100%"/>
 
 #### Mobile
 
-![screenshot mobile](design/mobile.png)
-![screenshot mobile](design/mobile2.png)
+<img src="design/mobile.png" alt="drawing" />
+<img src="design/mobile2.png" alt="drawing"/>
+<img src="design/mobile3.png" alt="drawing"/>
 
 
 ### Links
