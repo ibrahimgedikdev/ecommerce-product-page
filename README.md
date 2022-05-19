@@ -1,8 +1,6 @@
 ## E-commerce product page
 
-I developed product detail page using javascript and scss with lightbox product gallery and shopping cart functions
-
-### Screenshot
+Product detail page using Javascript and SCSS with lightbox product gallery and shopping cart functions
 
 #### Desktop
 
