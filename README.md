@@ -11,9 +11,11 @@ I developed product detail page using javascript and scss with lightbox product 
 
 #### Mobile
 
-<img src="design/mobile.png" alt="drawing" />
-<img src="design/mobile2.png" alt="drawing"/>
-<img src="design/mobile3.png" alt="drawing"/>
+<div style="display:flex;">
+<img src="design/mobile.png" alt="" width="33%" />
+<img src="design/mobile2.png" alt="" width="33%"/>
+<img src="design/mobile3.png" alt="" width="33%"/>
+</div>
 
 
 ### Links
