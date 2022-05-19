@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon.eot?qv2pig');
+    src:  url('icomoon.eot?qv2pig#iefix') format('embedded-opentype'),
+      url('icomoon.ttf?qv2pig') format('truetype'),
+      url('icomoon.woff?qv2pig') format('woff'),
+      url('icomoon.svg?qv2pig#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-icon-previous:before {
+    content: "\e900";
+    color: #1d2025;
+  }
+  .icon-icon-plus:before {
+    content: "\e901";
+    color: #ff7e1b;
+  }
+  .icon-icon-next:before {
+    content: "\e902";
+    color: #1d2025;
+  }
+  .icon-icon-minus:before {
+    content: "\e903";
+    color: #ff7e1b;
+  }
+  .icon-icon-menu:before {
+    content: "\e904";
+    color: #69707d;
+  }
+  .icon-icon-delete:before {
+    content: "\e905";
+    color: #c3cad9;
+  }
+  .icon-icon-close:before {
+    content: "\e906";
+    color: #69707d;
+  }
+  .icon-icon-cart:before {
+    content: "\e907";
+    color: #69707d;
+  }
+  

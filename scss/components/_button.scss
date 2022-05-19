@@ -1,0 +1,19 @@
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.btn--primary {
+    background-color: $orange;
+    color: $white;
+    display: block;
+    padding: 1.25rem 2.5rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+    &:hover{
+        opacity: 0.5;
+        box-shadow: $orange 0px 3px 20px 0px;
+
+    }
+}

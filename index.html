@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/style.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+  <body>
+    <div class="menu__overlay"></div>
+    <section class="lightbox">
+      <div class="lightbox__overlay"></div>
+      <div class="lightbox__inner">
+        <button id="closeLightboxBtn">
+          <i class="icon-icon-close"></i>
+        </button>
+        <div class="clearfix"></div>
+        <div class="lightbox__items">
+          <div class="lightbox__item active">
+            <img
+              src="images/image-product-1.jpg"
+              alt=""
+              class="lightbox__image"
+            />
+          </div>
+          <div class="lightbox__control">
+            <button id="lightboxPrev">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <button id="lightboxNext">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul class="lightbox__thumbnails">
+          <a href="javascript:;" class="lightbox__thumbnail active">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              data-feature-src="images/image-product-1.jpg"
+              alt="Fall Limited Edition Sneakers"
+              class="lightbox__thumbnail__image"
+            />
+          </a>
+          <a href="javascript:;" class="lightbox__thumbnail">
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              data-feature-src="images/image-product-2.jpg"
+              alt="Fall Limited Edition Sneakers"
+              class="lightbox__thumbnail__image"
+            />
+          </a>
+          <a href="javascript:;" class="lightbox__thumbnail">
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              data-feature-src="images/image-product-3.jpg"
+              alt="Fall Limited Edition Sneakers"
+              class="lightbox__thumbnail__image"
+            />
+          </a>
+          <a href="javascript:;" class="lightbox__thumbnail">
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              data-feature-src="images/image-product-4.jpg"
+              alt="Fall Limited Edition Sneakers"
+              class="lightbox__thumbnail__image"
+            />
+          </a>
+        </ul>
+      </div>
+    </section>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__left">
+          <button class="toggle__btn" id="toggleBtn">
+            <i class="icon-icon-menu"></i>
+          </button>
+          <a href="" class="navbar__brand">
+            <img src="images/logo.svg" alt="Sneakers Logo" class="logo" />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/collections" class="nav__link">Collections</a>
+            </li>
+            <li class="nav__item">
+              <a href="/men" class="nav__link">Men</a>
+            </li>
+            <li class="nav__item">
+              <a href="/women" class="nav__link">Women</a>
+            </li>
+            <li class="nav__item">
+              <a href="/about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__right">
+          <div class="cart">
+            <button class="cart__button">
+              <span class="icon-icon-cart"></span>
+              <span class="product__length">0</span>
+            </button>
+          </div>
+          <a href="#" class="avatar">
+            <img src="images/image-avatar.png" alt="User Profile Avatar" />
+          </a>
+        </div>
+        <div class="cart__modal">
+          <div class="cart__header">
+            <h6>Cart</h6>
+          </div>
+          <div class="cart__body">
+            <h4>Your cart is empty !</h4>
+          </div>
+          <div class="cart__footer">
+            <a href="#" class="btn btn--primary">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="mobile__navbar">
+      <div class="container">
+       <button class="close__menu" id="closeMenuBtn">
+        <i class="icon-icon-close"></i>
+       </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">Collections</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Men</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Women</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="product__detail">
+      <section class="product__detail__section">
+        <div class="container">
+          <div class="product__row">
+            <div class="product__left">
+              <div class="product__feature">
+                <img
+                  src="images/image-product-1.jpg"
+                  alt="Fall Limited Edition Sneakers"
+                  class="feature__image"
+                />
+              </div>
+              <div class="product__thumbnails">
+                <a href="javascript:;" class="thumbnail active">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    data-feature-src="images/image-product-1.jpg"
+                    alt="Fall Limited Edition Sneakers"
+                    class="thumbnail__image"
+                  />
+                </a>
+                <a href="javascript:;" class="thumbnail">
+                  <img
+                    src="images/image-product-2-thumbnail.jpg"
+                    data-feature-src="images/image-product-2.jpg"
+                    alt="Fall Limited Edition Sneakers"
+                    class="thumbnail__image"
+                  />
+                </a>
+                <a href="javascript:;" class="thumbnail">
+                  <img
+                    src="images/image-product-3-thumbnail.jpg"
+                    data-feature-src="images/image-product-3.jpg"
+                    alt="Fall Limited Edition Sneakers"
+                    class="thumbnail__image"
+                  />
+                </a>
+                <a href="javascript:;" class="thumbnail">
+                  <img
+                    src="images/image-product-4-thumbnail.jpg"
+                    data-feature-src="images/image-product-4.jpg"
+                    alt="Fall Limited Edition Sneakers"
+                    class="thumbnail__image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="product__right">
+              <div class="product__header">
+                <h5 class="product__company">SNEAKER COMPANY</h5>
+                <h1 class="product__name">Fall Limited Edition Sneakers</h1>
+                <div class="product__description">
+                  <p>
+                    These low-profile sneakers are your perfect casual wear
+                    companion. Featuring a durable rubber outer sole, they'll
+                    withsand everything the weather can offer
+                  </p>
+                </div>
+              </div>
+              <div class="product__body">
+                <div class="product__price__top">
+                  <h3 class="new__price">$125.00</h3>
+                  <span class="discount__rate">50%</span>
+                </div>
+                <div class="product__price__bottom">
+                  <span class="old__price">250 ₺</span>
+                </div>
+              </div>
+              <div class="product__footer">
+                <div class="product__quantity">
+                  <button id="increaseBtn">
+                    <svg
+                      width="15"
+                      height="4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <defs>
+                        <path
+                          d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
+                          id="a"
+                        />
+                      </defs>
+                      <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
+                    </svg>
+                  </button>
+                  <input
+                    type="number"
+                    value="1"
+                    name="quantity"
+                    min="1"
+                    max="10"
+                    class="quantity__input"
+                  />
+                  <button id="decreaseBtn">
+                    <svg
+                      width="15"
+                      height="15"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <defs>
+                        <path
+                          d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
+                          id="b"
+                        />
+                      </defs>
+                      <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
+                    </svg>
+                  </button>
+                </div>
+                <button id="addCartBtn" class="btn--primary">
+                  <i class="icon-icon-cart"></i>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
