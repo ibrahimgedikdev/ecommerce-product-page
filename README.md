@@ -11,17 +11,26 @@ I developed product detail page using javascript and scss with lightbox product 
 
 #### Mobile
 
-<div style="display:flex;">
-<img src="design/mobile.png" alt="" width="33%" />
-<img src="design/mobile2.png" alt="" width="33%"/>
-<img src="design/mobile3.png" alt="" width="33%"/>
-</div>
+
+<table>
+  <tr>
+    <td valign="top">
+        <img src="design/mobile.png" alt="" width="100%" />
+    </td>
+     <td valign="top">
+        <img src="design/mobile2.png" alt="" width="100%" />
+    </td>
+     <td valign="top">
+        <img src="design/mobile3.png" alt="" width="100%" />
+    </td>
+  </tr>
+</table>
 
 
 ### Links
 
-- [Github repo]()
-- [Live Site URL]()
+- [Github repo](https://github.com/ibrahimgediktr/ecommerce-product-page)
+- [Live Site URL](https://e-commerce-product-page-ac818b.netlify.app/)
 
 ### Built with
 
